@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: grid;
+  background-color: lavender;
+}
+h1{
+  font-size: 50px;
+  color: darkslateblue;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+}
+.gallery1 {
+  display: grid;
+  grid-template-columns: 800fr 1fr 1fr;
+  grid-template-rows: 350px 400px 1fr;
+  grid-template-areas: 
+  "one two three"
+  "one four1 five"
+  "gallery2 gallery2 gallery2";
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.gallery2 {
+  display: grid;
+  grid-template-columns: 830px 1fr 1fr;
+  grid-template-rows: 350px;
+  grid-template-areas: 
+  "six seven eight";
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.one{
+  grid-area: one;
+}
+.two{
+  grid-area: two;
+}
+.three{
+  grid-area: three;
+}
+.four{
+  grid-area: four1;
+  place-self: start end;
+}
+.five{
+  grid-area: five;
+}
+.six{
+  grid-area: six;
+}
+.seven{
+  grid-area: seven;
+}
+.eight{
+  grid-area: eight;
+}
+.gallery1 img {
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery1 img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.gallery2 img {
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery2 img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

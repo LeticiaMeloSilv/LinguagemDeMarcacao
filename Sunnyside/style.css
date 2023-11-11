@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-font: 'Barlow', sans-serif;
+    --title-font: 'Fraunces', serif;
+    --red: #fe7867;
+    --yellow: #fad400;
+    --gray: #a7abae;
+    --white: #ffffff;
+    --graphic-text: #25564b;
+    --photography-text: #19536b;
+    --background-footer: #90d4c5;
+    --footer: #458c7e;
+    --background-color: #FFFBFB;
+}
+body{
+    font-family: var(--text-font);
+    background-color: var(--background-color);
+}
+header{
+    height: 80vh;
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: var(--white);
+    padding: 32px 16px;
+    display: grid;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+}
+header h1{
+    font-family: var(--text-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    place-self: start center;
+
+}
+header .arrow-down{
+    place-self: start center;
+}
+.info img{
+    width: 100%;
+} 
+.description{
+    display: grid;
+    padding: 64px 0px;
+    place-items: center;
+    height: 500px;
+}
+.description__title{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+}
+.description__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+    line-height: 2rem;
+    padding: 0px 12px;
+}
+.description__learn-more{
+    position: relative;
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.line{
+    position: absolute;
+    height: 8px;
+    left: -5%;
+    bottom: 1%;
+    width: 110%;
+    z-index: -1;
+    opacity: .3;
+    border-radius: 4px;
+}
+.line-yellow{
+    background-color: var(--yellow);
+}
+.line-red{
+    background-color: var(--red);
+}
+.container{
+    height: 600px;
+    background-size: cover;
+}
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+.container.graphic div{
+    color: var(--graphic-text);
+}
+.container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    gap: 1.5rem;
+}
+.container .description__text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+.container.photography div{
+    color: var(--photography-text);
+}
+.testimonials{
+    text-align: center;
+}
+.testimonials-title{
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    padding-top: 64px;
+}
+.client{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.client__avatar{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.client__avatar.client1{
+    background-image: url(./images/image-emily.jpg);
+}
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
+.client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    opacity: .6;
+}
+.client__name{
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding-top: 12px ;
+}
+.images{
+    display: grid;
+    grid-template-areas:
+    "milk orange_"
+    "cone sugar"
+    ;
+}
+.milk{
+    grid-area: milk;
+}
+.orange{
+    grid-area: orange_;
+}
+.cone{
+    grid-area: cone;
+}
+.sugar{
+    grid-area: sugar;
+}
+.footer{
+    background-color: var(--background-footer);
+    color: var(--footer);
+    align-items: center;
+    justify-content: center;}
+.footer_title{
+    font-family: var(--title-font);
+}
+.footer_text{
+    font-family: var(--text-font);
+    word-spacing: 20px;
+}

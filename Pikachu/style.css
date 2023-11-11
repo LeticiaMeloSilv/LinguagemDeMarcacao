@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px  1fr 50px;
+    padding: 70px 70px 24px 70px;
+        background-color: #f5cf06;
+        color: #8e4106;
+        font-family: 'Righteous', cursive;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: 'Righteous', cursive;
+}
+.logo__text{
+    font-size: 32px;
+    font-weight: 100;
+}
+main{
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+   grid-template-rows: 1 fr 1fr; 
+    
+    
+}
+.tittle{
+  
+    grid-column: 1/-1;
+    place-self: center;
+}
+.tittle__text{
+color: #fff;
+font-size: 350px;
+}
+.title__transparent{
+    color: #FFF5;
+    font-size: 27vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    z-index: -1;
+  
+}
+.info{
+    place-self: end start;
+}
+.info__tittle{
+    font-size: 64px;
+}
+.info__text{
+    font-size: 20px;
+    width: 500px;
+
+}
+.action{
+    background-color: #8e4106; ;
+    width: 400px;
+    height: 100px;
+    place-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.pikachu-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
